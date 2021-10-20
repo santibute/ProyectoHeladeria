@@ -1,0 +1,64 @@
+.contenedor {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+}
+/*<>*/
+.contenedor> div
+.contenedor .header,
+.contenedor .carrusel,
+.contenedor .sabores,
+.contenedor .colum1,
+.contenedor .colum2,
+.contenedor .colum3,
+.contenedor .footer {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.contenedor .header {
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+.contenedor .carrusel {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+.contenedor .sabores {
+    grid-column-start: 1;
+    grid-column-end: -1; 
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.contenedor .colum1 {
+    background-color: white;
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.contenedor .colum2 {
+    background-color: white;
+    color: black;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.cucurucho {
+    height: 100px;
+    width: 150px;
+}
+h4 {
+    text-align: center;
+    font-size: 5rem;
+    
+}
+
+h6 {
+    background-color: blue;
+    color: red;
+    font-style:italic;
+    
+
+}
