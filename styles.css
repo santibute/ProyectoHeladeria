@@ -56,9 +56,74 @@ h4 {
 }
 
 h6 {
-    background-color: blue;
-    color: red;
+    background-color: rgb(155,215,216);
+    color: white;
     font-style:italic;
     
 
 }
+/*Footer*/
+/*.flex-container{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+}
+.flex-item{
+    background-color: violet;
+    border: 1px solid black;
+}
+
+*/
+footer{
+    width: 100%;
+    padding: 50px   0px;
+    background-image: url(/Imagenes/fondofooter.svg);
+    background-size: cover;
+  
+
+
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+
+
+}
+.box_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+}
+.box_footer .logo img{
+    width: 100px;
+    ;
+
+}
+.box_footer a{
+    text-decoration: none;
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 500;
+}
+
+.box_footer a :hover{
+    flex-direction: column;
+    opacity: 0.8;
+
+}
+.box_footer a i{
+    font-size: 40px;
+    color: rgb(155,215,216);
+    padding: 0 20px;
+    
+}
+
+
