@@ -1,8 +1,12 @@
+body {
+    background-image: url(../Proyecto-FullStack/Imagenes/WhatsApp\ Image\ 2021-10-21\ at\ 20.37.16.jpeg);
+}
 .contenedor {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 60px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,auto);
+    
 }
 /*<>*/
 .contenedor> div
@@ -29,25 +33,35 @@
 .contenedor .sabores {
     grid-column-start: 1;
     grid-column-end: -1; 
-    display: grid;
+    display:inline-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-gap: 20px;
     grid-template-columns: repeat(3,1fr);
 }
 .contenedor .colum1 {
-    background-color: white;
+    background-color: transparent;
     color: black;
     grid-column-start: 1;
     grid-column-end: 2;
 }
 .contenedor .colum2 {
-    background-color: white;
+    background-color: transparent;
     color: black;
     grid-column-start: 2;
+    grid-column-end: 3;
+}
+.contenedor .colum3 {
+    background-color: transparent;
+    color: black;
+    grid-column-start: 3;
     grid-column-end: 3;
 }
 .cucurucho {
     height: 100px;
     width: 150px;
+    align-content:flex-end
 }
 h4 {
     text-align: center;
@@ -56,9 +70,10 @@ h4 {
 }
 
 h6 {
-    background-color: rgb(155,215,216);
-    color: white;
-    font-style:italic;
+    
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
     
 
 }
@@ -125,5 +140,33 @@ footer{
     padding: 0 20px;
     
 }
+.h6bute {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    
 
+}
+span {
+    color: rgb(155,215,216);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.boxsab {
+    background-color: white;
+    border-radius: 5px;
+    width: 50%;
+    height: 50%;
+   
+
+}
+.boxsabcrem {
+    background-color: white;
+    border-radius: 5px;
+    width: 50%;
+    height: 100%;
+    
+    
+
+}
 
