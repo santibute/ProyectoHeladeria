@@ -6,8 +6,9 @@ body {
     font-family: sans-serif;
     padding: 90px 20px;
 }
+/*Header*/
 header{
-    background-image: url(../ProyectoHeladeria/Imagenes/fondofooter.svg);
+    background-image: url(../ProyectoHeladeria/Imagenes/fondofooter.svg);/*Editar img p*/
     background-size: cover;
     height: 80px;
     position: fixed;
@@ -39,6 +40,7 @@ div.redes{
 
     margin-right: 40px;
     list-style: none;
+    background-color: gold;
 }
 .menu-item{
     font-size: 18px;
@@ -53,7 +55,8 @@ div.redes{
     transition: 0.3s;
 }
 .menu-bar{
-    color: black;
+    color: red;
+    background-color: black;
     background: none;
     border: none;
     font-size: 24px;
@@ -124,6 +127,9 @@ div.redes{
     }
 
 }
+/*Header*/
+
+/*Body*/
 .contenedor {
     display: flex;
     align-items: center;
@@ -210,9 +216,9 @@ h6 {
     color: black;
     font-weight: bold;
     font-size: 3rem;
-    
-
 }
+/*Body*/
+
 /*Footer*/
 /*.flex-container{
     width: 100px;
@@ -307,3 +313,4 @@ span {
 .sabores {
     font-size: 4rem;
 }
+/*footer*/
