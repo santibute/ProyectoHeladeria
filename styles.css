@@ -1,3 +1,129 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    padding: 90px 20px;
+}
+header{
+    background-image: url(../ProyectoHeladeria/Imagenes/fondofooter.svg);
+    background-size: cover;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu-link{
+    color: black;
+    text-decoration: none;
+}
+div.redes{
+    display: flex;
+}
+.logo{   
+    padding: 0 40px;
+
+}
+.logo img{
+    width: 80px;
+}
+.nav-menu{
+    display: flex;
+
+    margin-right: 40px;
+    list-style: none;
+}
+.menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-decoration:underline;
+    text-transform: uppercase;
+    
+}
+.menu-link:hover{
+    color: rgb(155,215,216);
+    transition: 0.3s;
+}
+.menu-bar{
+    color: black;
+    background: none;
+    border: none;
+    font-size: 24px;
+    padding: 20px;
+    line-height: 40px;
+    cursor: pointer;
+
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    body {
+        padding-top: 70px;
+    }
+    header{
+        height: 70px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .logo{
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+    }
+    .logo img{
+        width: 60px;
+    }
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+    
+        width: 320px;
+        
+
+        position: fixed;
+        top: 60px;
+        right: 0px;
+        margin-right: 0;
+        padding: 0;
+
+        height: 100%;
+        overflow-y: auto;
+        
+
+    }
+    .menu-item{
+        font-size: 18px;
+        line-height: 60px;
+        
+    }
+    .menu-link:hover,
+    .menu-link_active{
+        color: rgb(155,215,216);
+        transition: 0.3s;
+    }
+    .menu-bar{
+        font-size: 22px;
+        line-height: 30px;
+        display: block;
+    }
+    .menu-bar:hover{
+        color: rgb(155,215,216);
+    }
+    .menu-bar_visible{
+        left: 0;
+    }
+
+}
 .contenedor {
     display: flex;
     align-items: center;
