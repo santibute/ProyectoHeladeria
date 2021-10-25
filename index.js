@@ -7,4 +7,3 @@ navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("nav-menu_visbile");
     console.log("me abri")
 } )
-window.alert("HOLA")

@@ -8,7 +8,7 @@ body {
 }
 /*Header*/
 header{
-    background-image: url(../ProyectoHeladeria/Imagenes/fondofooter.svg);/*Editar img p*/
+    background-image: url(./Imagenes/fondofooter.svg);/*Editar img p*/
     background-size: cover;
     height: 80px;
     position: fixed;
@@ -64,6 +64,9 @@ div.redes{
     line-height: 40px;
     cursor: pointer;
 
+    display: none;
+}
+.enlaces{
     display: none;
 }
 
