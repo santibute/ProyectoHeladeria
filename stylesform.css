@@ -1,0 +1,101 @@
+main{
+
+}
+
+section{
+    background-image: url(/Imagenes/background\ formulario.jpg);
+
+}
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    align-items: center;
+   
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 1rem;
+    max-width:  1000px;
+    margin-left:auto;
+    margin-right: auto;
+    align-items: center;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    width: 19rem;
+    margin:  0.5rem 0;
+}
+
+.field label{
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+}
+
+.field input{
+    font-size: 1.1rem;
+    height: 2.2rem;
+    padding-left: 0.5rem;
+    border: 2px solid rgb(42, 44, 44);
+    border-radius: 5px;
+}
+
+.field select{
+    font-size: 1.1rem;
+    height: 2.6rem;
+    padding-left: 0.5rem;
+    border: 2px solid rgb(42, 44, 44);
+    border-radius: 5px;
+}
+.textbox{
+display: flex;
+flex-direction: column;
+width: 60rem;
+margin: 0.75rem 0;
+}
+
+label{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+}
+
+textarea{
+    font-size: 1.1rem;
+    margin: 0px;
+    height: 273px;
+    width: 1034px;
+    min-height: 273px;
+    min-width: 1034px;
+    max-width: 1034px;
+    max-height: 273px;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    border: 2px solid rgb(42, 44, 44);
+    border-radius: 5px;*/
+}
+
+button{
+    padding: 0.75rem 1rem;
+    border: 2px solid rgb(42, 44, 44);
+    border-radius: 5px;
+}
+
+.warnings{
+    font-size: 20px;
+    font-weight: bold;
+    color: black ;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+}
