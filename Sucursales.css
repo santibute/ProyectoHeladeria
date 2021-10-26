@@ -3,19 +3,29 @@ body{
 }
 h1{
     text-align: center;
+    color: black;
 }
 .sucursales{
     width: auto;
+
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
     
 }
 .sucursal-box{
-    width: calc(33.33%-20px);
-    margin: 30px;
-    background-color: gainsboro;
+    margin: 20px;
+    padding-bottom: 10px;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: gainsboro;
+    flex-wrap: wrap;
+}
+.sucursal-box:hover{
+    background: rgb(155, 215, 216);
+    cursor: pointer;
+    color: white;
 }
 .sucursal-box h3{
     text-align: center;
@@ -41,23 +51,16 @@ h1{
     margin: 0 0 20 0px;
 }
 .mapa{
+    width: 100%;
     display: flex;
     justify-content: center;
 }
+.mapa iframe{
+    box-sizing: border-box;
+    border-radius: 10px;
+}
 
 /*Footer*/
-/*.flex-container{
-    width: 100px;
-    height: 100px;
-    background-color: lightblue;
-    display: flex;
-}
-.flex-item{
-    background-color: violet;
-    border: 1px solid black;
-}
-
-*/
 footer{
     width: 100%;
     padding: 50px   0px;
@@ -81,8 +84,6 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
-
 
 }
 .box_footer .logo img{
