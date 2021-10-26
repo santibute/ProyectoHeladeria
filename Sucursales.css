@@ -1,20 +1,24 @@
+body{
+    background: url(./Imagenes/fondo_famiglia_blanco.png);
+}
 h1{
     text-align: center;
 }
 .sucursales{
     width: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-
+    flex: wrap;
+    
 }
 .sucursal-box{
     width: calc(33.33%-20px);
     margin: 30px;
     background-color: gainsboro;
     box-sizing: border-box;
-    border-radius: 3px;
+    border-radius: 10px;
+}
+.sucursal-box h3{
+    text-align: center;
 }
 .Barrio{
     text-align: center;
@@ -29,6 +33,110 @@ h1{
     font-weight: bold;
 }
 .imagen-box{
-    margin: 30px;
-    width: 200px;
+    width: 300px;
+    height: 300px;
+
+    border-radius: 10px 10px 0px 0px;
+
+    margin: 0 0 20 0px;
 }
+.mapa{
+    display: flex;
+    justify-content: center;
+}
+
+/*Footer*/
+/*.flex-container{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+}
+.flex-item{
+    background-color: violet;
+    border: 1px solid black;
+}
+
+*/
+footer{
+    width: 100%;
+    padding: 50px   0px;
+    background-image: url(./Imagenes/fondofooter.svg);
+    background-size: cover;
+  
+
+
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+
+
+}
+.box_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+}
+.box_footer .logo img{
+    width: 100px;
+    ;
+
+}
+.box_footer a{
+    text-decoration: none;
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 500;
+}
+
+.box_footer a :hover{
+    flex-direction: column;
+    opacity: 0.8;
+
+}
+.box_footer a i{
+    font-size: 40px;
+    color: rgb(155,215,216);
+    padding: 0 20px;
+    
+}
+.h6bute {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    
+
+}
+span {
+    color: rgb(155,215,216);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.boxsab {
+    background-color: white;
+    border-radius: 5px;
+    width: 70%;
+    height: 50%;
+   
+
+}
+.boxsabcrem {
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
+    height: 100%;
+
+}
+
+.sabores {
+    font-size: 4rem;
+}
+/*Footer*/

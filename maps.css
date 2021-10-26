@@ -15,7 +15,7 @@
     height: auto;
 }
 .fondobody {
-    background-image: url(../Proyecto-FullStack/Imagenes/fondo_famiglia_blanco.png);
+    background-image: url(./Imagenes/fondo_famiglia_blanco.png);
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(6,1fr);
@@ -89,7 +89,7 @@ body {
     
 }
 header{
-    background-image: url(../Proyecto-FullStack/Imagenes/fondofooter.svg);
+    background-image: url(./Imagenes/fondofooter.svg);
     background-size: cover;
     height: 80px;
     position: fixed;
@@ -246,7 +246,7 @@ div.redes{
     grid-column-start: 1;
     grid-column-end: -1; 
     grid-gap: 20px;
-    background-image: url(../Proyecto-FullStack/Imagenes/fondo\ principal.png);
+    background-image: url(./Imagenes/fondo\ principal.png);
 }
 .contenedor .sabores2 {
     font-size: 4rem;

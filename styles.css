@@ -6,8 +6,10 @@ body {
     font-family: sans-serif;
     padding: 90px 20px;
 }
-header{
-    background-image: url(../Proyecto-FullStack/Imagenes/fondofooter.svg);
+/*Header*/
+header {
+    background-image: url(./Imagenes/fondofooter.svg);
+    /*Editar img p*/
     background-size: cover;
     height: 80px;
     position: fixed;
@@ -15,116 +17,119 @@ header{
     top: 0;
     left: 0;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
-    background-color: transparent;
-    
 }
-.menu-link{
+
+.menu-link {
     color: black;
     text-decoration: none;
 }
-div.redes{
+
+div.redes {
     display: flex;
 }
-.logo{   
-    padding: 0 40px;
 
+.logo {
+    padding: 0 40px;
 }
-.logo img{
+
+.logo img {
     width: 80px;
 }
-.nav-menu{
-    display: flex;
 
+.nav-menu {
+    display: flex;
     margin-right: 40px;
     list-style: none;
 }
-.menu-item{
+
+.menu-item {
     font-size: 18px;
     margin: 0 10px;
     line-height: 80px;
-    text-decoration:underline;
+    text-decoration: underline;
     text-transform: uppercase;
-    
 }
-.menu-link:hover{
-    color: rgb(155,215,216);
+
+.menu-link:hover {
+    color: rgb(155, 215, 216);
     transition: 0.3s;
 }
-.menu-bar{
-    color: black;
+
+.menu-bar {
     background: none;
     border: none;
     font-size: 24px;
     padding: 20px;
     line-height: 40px;
     cursor: pointer;
-
     display: none;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     body {
         padding-top: 70px;
     }
-    header{
+    header {
         height: 70px;
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
     }
-    .logo{
+    .logo {
         padding: 0 40px;
         display: flex;
         align-items: center;
     }
-    .logo img{
+    .logo img {
         width: 60px;
     }
-    .nav-menu{
+    .nav-menu {
+        position: fixed;
         flex-direction: column;
         align-items: center;
-    
-        width: 320px;
-        
-
-        position: fixed;
-        top: 60px;
-        right: 0px;
-        margin-right: 0;
-        padding: 0;
-
-        height: 100%;
         overflow-y: auto;
         
-
+        top: 60px;
+        
+        height: 100%;
+        width: 320px;
+        
+        left: 100%;
     }
-    .menu-item{
+    .menu-item {
         font-size: 18px;
         line-height: 60px;
-        
     }
     .menu-link:hover,
-    .menu-link_active{
-        color: rgb(155,215,216);
+    .menu-link_active {
+        color: rgb(155, 215, 216);
         transition: 0.3s;
     }
-    .menu-bar{
+    .menu-bar {
         font-size: 22px;
         line-height: 30px;
         display: block;
     }
-    .menu-bar:hover{
-        color: rgb(155,215,216);
+    .menu-bar:hover {
+        color: rgb(155, 215, 216);
     }
-    .menu-bar_visible{
-        left: 0;
+    .nav-menu_visible {
+        right: 0px;
+        margin-right: 0;
+        padding: 0;
+        
+        left:auto;
+        transition: left 0.3s;
     }
-
 }
+
+/*Header*/
+
 .contenedor {
     display: flex;
     align-items: center;
@@ -164,7 +169,7 @@ div.redes{
     grid-template-rows: repeat(4,auto);
     grid-column-start: 1;
     grid-column-end: -1; 
-    background-image: url(../Proyecto-FullStack/Imagenes/fondo\ principal.png);
+    background-image: url(./Imagenes/fondo\ principal.png);
 }
 .contenedor .sabores2 {
     font-size: 4rem;
@@ -229,7 +234,7 @@ h6 {
 footer{
     width: 100%;
     padding: 50px   0px;
-    background-image: url(../Proyecto-FullStack/Imagenes/fondofooter.svg);
+    background-image: url(./Imagenes/fondofooter.svg);
     background-size: cover;
   
 
