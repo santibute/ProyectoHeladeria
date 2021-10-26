@@ -95,10 +95,13 @@ div.redes {
         align-items: center;
         overflow-y: auto;
         
+        border-bottom-left-radius: 10px;
+        
+
         top: 60px;
         
-        height: 100%;
-        width: 320px;
+        height: 40%;
+        width: 200px;
         
         left: 100%;
     }
@@ -108,7 +111,7 @@ div.redes {
     }
     .menu-link:hover,
     .menu-link_active {
-        color: rgb(155, 215, 216);
+        color: white;
         transition: 0.3s;
     }
     .menu-bar {
@@ -126,6 +129,10 @@ div.redes {
         
         left:auto;
         transition: left 0.3s;
+
+        background: rgb(155, 215, 216);
+        opacity: 0.9;
+        
     }
 }
 
