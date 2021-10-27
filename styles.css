@@ -167,8 +167,8 @@ div.redes {
     grid-column-end: -1;
 }
 .contenedor .carrusel {
-    grid-column-start: 1;
-    grid-column-end: -1;
+    grid-column-start: 2;
+    grid-column-end: 5;
 }
 .contenedor .sabores1 {
     display: grid;
