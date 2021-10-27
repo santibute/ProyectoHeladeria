@@ -191,6 +191,9 @@ div.redes {
     grid-template-columns: repeat(3,1fr);
     background-color: transparent;
 }
+.imagen-izq{
+    width: auto;
+}
 .contenedor .colum1 {
   
     background-color: transparent;
@@ -224,6 +227,10 @@ h6 {
     font-weight: bold;
     font-size: 3rem;
     
+
+}
+
+@media screen and (max-width:1024px){
 
 }
 /*Footer*/
