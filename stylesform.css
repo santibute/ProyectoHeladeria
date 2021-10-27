@@ -1,10 +1,5 @@
-main{
-
-}
-
 section{
-    background-image: url(/Imagenes/background\ formulario.jpg);
-
+    background-image: url(../Proyecto-FullStack/Imagenes/background\ formulario.jpg);
 }
 h1{
     font-size: 2rem;
@@ -81,7 +76,7 @@ textarea{
     padding-top: 0.5rem;
     padding-left: 0.5rem;
     border: 2px solid rgb(42, 44, 44);
-    border-radius: 5px;*/
+    border-radius: 5px;
 }
 
 button{
@@ -93,7 +88,7 @@ button{
 .warnings{
     font-size: 20px;
     font-weight: bold;
-    color: black ;
+    color: black;
     width: 200px;
     text-align: center;
     margin: auto;
