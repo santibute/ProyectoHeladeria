@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesform.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <main>
+        <section>
+            <form id="form" >
+                <h1>Formulario</h1>
+                <div class="field">
+                    <label>Nombre y apellido</label>
+                    <input type="text" placeholder="Ingrese Nombre y apellido " name="nombre"  id="nombre" autocomplete>
+                </div>
+                <div class="field">
+                    <label>Email</label>
+                    <input type="email" placeholder="Ingrese su correo" name="mail" id="mail" autocomplete>
+                </div>
+                <div class="field">
+                    <label>Telefono</label>
+                    <input type="text" placeholder="Ingrese su numero" name="telefono" id="telefono" autocomplete>
+                </div>
+                <div class="field">
+                    <label>Seleccionar sucursal</label>
+                    <select name="sucursal">
+                        <option value="">...</option>
+                        <option value="Acassuso">Acassuso</option>
+                        <option value="Almagro">Almagro</option>
+                        <option value="Almagro II">Almagro II</option>
+                        <option value="Almagro III">Almagro III</option>
+            
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Adjunta tu CV</label>
+                    <input type="file" name="cv">
+                </div>
+                
+                <div class="textbox">
+                    <label>Mensaje</label>
+                    <textarea name="mensaje" placeholder=""></textarea>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+                <div></div>
+                    <p class= 'warnings' id='warnings'></p>
+                </div>
+                    <br>
+            </form>
+        </section>
+    </main>
+     <script src="validar.js" ></script>
+</body>
+
+</html>
