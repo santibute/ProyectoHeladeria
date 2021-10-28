@@ -140,102 +140,186 @@ div.redes {
 }
 
 /*Header*/
+/* Body */
 
-.contenedor {
-    display: flex;
-    align-items: center;
-    display: grid;
-    grid-gap: 60px;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(4,auto);
-    
-}
-/*<>*/
-.contenedor> div,
-.contenedor .header,
-.contenedor .carrusel,
-.contenedor .sabores1,
-.contenedor .sabores2,
-.contenedor .colum1,
-.contenedor .colum2,
-.contenedor .colum3,
-.contenedor .footer {
-    
-    padding: 20px;
+*{
+    padding: 0px;
+    box-sizing: border-box;
     border-radius: 5px;
+    font-family: sans-serif;
 }
-.contenedor .header {
-    
-    grid-column-start: 1;
-    grid-column-end: -1;
-}
-.contenedor .carrusel {
-    grid-column-start: 2;
-    grid-column-end: 5;
-}
-.contenedor .sabores1 {
+.container{
     display: grid;
-    grid-gap: 20px;
+
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(4,auto);
-    grid-column-start: 1;
-    grid-column-end: -1; 
-    background-image: url(./Imagenes/fondo\ principal.png);
+    gap: 30px;
 }
-.contenedor .sabores2 {
-    font-size: 4rem;
-    grid-column-start: 1;
-    grid-column-end: -1; 
-    display:inline-flex;
+
+.sabores{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
     display: flex;
-    align-items: center;
     justify-content: center;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3,1fr);
     background-color: transparent;
 }
-.imagen-izq{
-    width: auto;
+.sabores h4{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(155, 215, 216);
+
 }
-.contenedor .colum1 {
-  
-    background-color: transparent;
-    color: black;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-.contenedor .colum2 {
+.box-DDL{
+    grid-column: 2/3;
+    grid-row:2/3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
    
-    background-color: transparent;
-    color: black;
-    grid-column-start: 3;
-    grid-column-end: 4;
 }
-.contenedor .colum3 {
-   
-    background-color: transparent;
-    color: black;
-    grid-column-start: 4;
-    grid-column-end: 5;
+.box-Choco{
+    grid-column: 2/3;
+    grid-row: 3/4;
 }
-.cucurucho {
-    height: 100px;
-    width: 150px;
-    align-content:flex-end;
-    background-color: transparent;
+.box-Crema{
+    grid-column: 3/4;
+    grid-row: 2/4;
 }
-h6 {
-    
+.box-Reco{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.box-Frutas{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+.h6-sab{
     color: black;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 1.5rem;
+}
+
+.h6-sab span{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: rgb(155, 215, 216);
+}
+.box{
+    flex-direction: column;
+    background-color: whitesmoke;
     
-
 }
 
-@media screen and (max-width:1024px){
-
+@media screen and (max-width:768px){
+    .container{
+        display: grid;
+    
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    
+    .sabores{
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    .box-DDL{
+        grid-column: 1/2;
+        grid-row:2/3;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+       
+    }
+    .box-Choco{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .box-Crema{
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+    .box-Reco{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .box-Frutas{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .box{
+        padding: 10px 20px 10px 20px;
+    }
 }
+@media screen and (max-width:576px){
+    .container{
+        display: grid;
+    
+        grid-template-columns: 1fr;
+    }
+    
+    .sabores{
+        grid-column: 1/-1;
+        grid-row: 1/1;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    .box-DDL{
+        grid-column: 1/-1;
+        grid-row:2/3;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .box-Choco{
+        grid-column: 1/-1;
+        grid-row: 3/4;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-Crema{
+        grid-column: 1/-1;grid-column: 1/-1;
+        grid-row: 4/5;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-Reco{
+        grid-column: 1/-1;
+        grid-row: 5/6;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-Frutas{
+        grid-column: 1/-1;
+        grid-row: 6/7;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        margin: 0px auto 0px auto;
+    }
+}
+/* Body */
 /*Footer*/
 */
 footer{
@@ -287,13 +371,6 @@ footer{
     color: rgb(155,215,216);
     padding: 0 20px;
     
-}
-.h6bute {
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: capitalize;
-    
-
 }
 span {
     color: rgb(155,215,216);
