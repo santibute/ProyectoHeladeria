@@ -6,15 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesform.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="./index.js"></script>
+    <script defer src="validar.js" ></script>
     <title>Document</title>
 </head>
-
-
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="Imagenes/famiglia3.0" alt="">
+            </a>
+            <buton class="menu-bar">
+                <i class="fas fa-bars"></i>
+            </buton>
+            <ul class="nav-menu" >
+                <li class="menu-item"><a href="#" class="menu-link">Nosotros</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Sucursales</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Franquicias</a></li>
+                <div class="redes">
+                    <li class="menu-item">
+                        <a href="https://www.facebook.com/famigliacasadehelados/" class="menu-link" target="_blank">
+                            <i class="fab fa-facebook"></i></a></li>
+                    <li class="menu-item">
+                        <a href="https://www.twitter.com" class="menu-link" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="menu-item">
+                        <a href="https://www.instagram.com/famigliacasadehelados/" class="menu-link" target="_blank">
+                            <i class="fab fa-instagram"></i></a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
 <body>
     <main>
         <section>
             <form id="form" >
-                <h1>Formulario</h1>
+                <h1>Trabaja con nosotros</h1>
                 <div class="field">
                     <label>Nombre y apellido</label>
                     <input type="text" placeholder="Ingrese Nombre y apellido " name="nombre"  id="nombre" autocomplete>
@@ -31,10 +58,10 @@
                     <label>Seleccionar sucursal</label>
                     <select name="sucursal">
                         <option value="">...</option>
-                        <option value="Acassuso">Acassuso</option>
-                        <option value="Almagro">Almagro</option>
-                        <option value="Almagro II">Almagro II</option>
-                        <option value="Almagro III">Almagro III</option>
+                        <option value="Urca">Urca</option>
+                        <option value="Villa Eucaristica">Villa Eucaristica</option>
+                        <option value="Nueva Córdoba">Nueva Córdoba</option>
+                        <option value="Villa Allende">Villa Allende</option>
             
                     </select>
                 </div>
@@ -58,7 +85,30 @@
             </form>
         </section>
     </main>
-     <script src="validar.js" ></script>
+
 </body>
+<footer>
+    <div class="container_footer">
+        <div class="box_footer">
+            <div class="logo">
+                <img src="Imagenes/famiglia3.0" alt="Logotipo Famiglia">
+            </div>
+            <div class="box_footer">
+                <h2><a href="Indexform.html">Trabaja con nosotros</a></h2>
+            </div>
+            <div class="box_footer">
+                <h2><a href="$">Trabaja con nosotros</a></h2>
+            </div>
+
+            <div class="box_footer">
+                <a href="https://www.facebook.com/famigliacasadehelados/" target="_blank">
+                    <i class="fab fa-facebook"></i> </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/famigliacasadehelados/" target="_blank">
+                    <i class="fab fa-instagram-square"></i></a>
+            </div>
+        </div>
+</footer>
 
 </html>
