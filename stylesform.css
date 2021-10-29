@@ -86,11 +86,13 @@ button{
 }
 
 .warnings{
-    font-size: 20px;
+    font-family: sans-serif;
+    border: rgb(0, 0, 0);
+    font-size: 15px;
     font-weight: bold;
-    color: black;
-    width: 200px;
+    color: rgb(255, 20, 20);
+    width: auto;
     text-align: center;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 30px;
 }
