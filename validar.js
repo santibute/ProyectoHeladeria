@@ -18,11 +18,11 @@ form.addEventListener('submit' , e=>{
     }
     
     if (telefono.value.length <9) {
-        warnings = warnings + 'el numero no es valido <br>'
+        warnings = warnings + 'el número no es válido <br>'
         entrar = true
     }
     if (!regexmail.test(mail.value)) {
-        warnings = warnings + 'email no valido <br>'
+        warnings = warnings + 'email no válido <br>'
         entrar = true
     }
     

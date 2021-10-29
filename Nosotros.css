@@ -4,7 +4,6 @@ h1 {
   justify-content: center;
 }
 .Noscontenedor {
-  gap: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -66,15 +65,70 @@ h1 {
   grid-row-end: 4;
 }
 .video {
+  background-image: url(./Imagenes/Identidad\ de\ Marca_page-0002.jpg);
+  background-size: contain;
   border-radius: 10px;
   grid-column: 2/2;
   grid-row-end: 1;
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 100%;
-  height: 100%;
 }
 .video video {
+  height: 480px;
+  width: 640px;
   border-radius: 10px 10px 10px 10px; 
+}
+@media screen and (max-width: 1024px){
+  .Noscontenedor{
+    padding: 0px 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video video {
+    height: 360px;
+    width: 480px;
+    border-radius: 10px 10px 10px 10px; 
+  }
+}
+@media screen and (max-width: 768px){
+  .Noscontenedor {
+    grid-template-columns: (2, 1fr);
+  }
+   .img2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .video {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }  
+  .img3 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .img4 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .img5 {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+  .img6 {
+    grid-column: 1/3;
+    grid-row: 6/7;
+  }
+  .img7 {
+    grid-column: 1/3;
+    grid-row: 7/8;
+  }
+  .img8 {
+    grid-column: 1/3;
+    grid-row: 8/9;
+  }
 }

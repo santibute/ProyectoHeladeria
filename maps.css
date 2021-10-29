@@ -16,11 +16,6 @@
 }
 .fondobody {
     background-image: url(./Imagenes/fondo_famiglia_blanco.png);
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(1,auto); 
-    position: relative;
 }
 .in {
     display: grid;
@@ -28,18 +23,8 @@
     align-items: center;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(1,auto);
-    width: 100%;
-    height: auto;
-    display: flex;
-    margin: 50px auto;
-    grid-gap: 40px;
-    position: relative;
 }
 .izq {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    padding-right: 20px;
     width: 400px;
     height: auto;
 }
@@ -64,6 +49,9 @@
 .wap a{
     text-decoration: none;
     color: black;
+}
+.wap a:hover{
+    color: white
 }
 .dir {
 font-weight: bold;
@@ -92,124 +80,6 @@ body {
     padding-top: 90px;
     
 }
-header{
-    background-image: url(./Imagenes/fondofooter.svg);
-    background-size: cover;
-    height: 80px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    
-}
-.menu-link{
-    color: black;
-    text-decoration: none;
-}
-div.redes{
-    display: flex;
-}
-.logo{   
-    padding: 0 40px;
-
-}
-.logo img{
-    width: 80px;
-}
-.nav-menu{
-    display: flex;
-
-    margin-right: 40px;
-    list-style: none;
-}
-.menu-item{
-    font-size: 18px;
-    margin: 0 10px;
-    line-height: 80px;
-    text-decoration:underline;
-    text-transform: uppercase;
-    
-}
-.menu-link:hover{
-    color: rgb(155,215,216);
-    transition: 0.3s;
-}
-.menu-bar{
-    color: black;
-    background: none;
-    border: none;
-    font-size: 24px;
-    padding: 20px;
-    line-height: 40px;
-    cursor: pointer;
-
-    display: none;
-}
-
-@media screen and (max-width: 768px){
-    body {
-        padding-top: 70px;
-    }
-    header{
-        height: 70px;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-    }
-    .logo{
-        padding: 0 40px;
-        display: flex;
-        align-items: center;
-    }
-    .logo img{
-        width: 60px;
-    }
-    .nav-menu{
-        flex-direction: column;
-        align-items: center;
-    
-        width: 320px;
-        
-
-        position: fixed;
-        top: 60px;
-        right: 0px;
-        margin-right: 0;
-        padding: 0;
-
-        height: 100%;
-        overflow-y: auto;
-        
-
-    }
-    .menu-item{
-        font-size: 18px;
-        line-height: 60px;
-        
-    }
-    .menu-link:hover,
-    .menu-link_active{
-        color: rgb(155,215,216);
-        transition: 0.3s;
-    }
-    .menu-bar{
-        font-size: 22px;
-        line-height: 30px;
-        display: block;
-    }
-    .menu-bar:hover{
-        color: rgb(155,215,216);
-    }
-    .menu-bar_visible{
-        left: 0;
-    }
-
-}
 .contenedor {
     display: flex;
     align-items: center;
@@ -218,178 +88,4 @@ div.redes{
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(4,auto);
     
-}
-/*<>*/
-.contenedor> div,
-.contenedor .header,
-.contenedor .carrusel,
-.contenedor .sabores1,
-.contenedor .sabores2,
-.contenedor .colum1,
-.contenedor .colum2,
-.contenedor .colum3,
-.contenedor .footer {
-    
-    padding: 20px;
-    border-radius: 5px;
-}
-.contenedor .header {
-    
-    grid-column-start: 1;
-    grid-column-end: -1;
-}
-.contenedor .carrusel {
-    grid-column-start: 1;
-    grid-column-end: -1;
-}
-.contenedor .sabores1 {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(4,auto);
-    grid-column-start: 1;
-    grid-column-end: -1; 
-    grid-gap: 20px;
-    background-image: url(./Imagenes/fondo\ principal.png);
-}
-.contenedor .sabores2 {
-    font-size: 4rem;
-    grid-column-start: 1;
-    grid-column-end: -1; 
-    display:inline-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3,1fr);
-    background-color: transparent;
-}
-.contenedor .colum1 {
-  
-    background-color: transparent;
-    color: black;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-.contenedor .colum2 {
-   
-    background-color: transparent;
-    color: black;
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-.contenedor .colum3 {
-   
-    background-color: transparent;
-    color: black;
-    grid-column-start: 4;
-    grid-column-end: 5;
-}
-.cucurucho {
-    height: 100px;
-    width: 150px;
-    align-content:flex-end;
-    background-color: transparent;
-}
-h6 {
-    
-    color: black;
-    font-weight: bold;
-    font-size: 3rem;
-    
-
-}
-/*Footer*/
-/*.flex-container{
-    width: 100px;
-    height: 100px;
-    background-color: lightblue;
-    display: flex;
-}
-.flex-item{
-    background-color: violet;
-    border: 1px solid black;
-}
-
-*/
-footer{
-    width: 100%;
-    padding: 50px   0px;
-    background-image: url(../Proyecto-FullStack/Imagenes/fondofooter.svg);
-    background-size: cover;
-  
-
-
-}
-
-.container_footer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    
-
-
-}
-.box_footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-
-
-}
-.box_footer .logo img{
-    width: 100px;
-    ;
-
-}
-.box_footer a{
-    text-decoration: none;
-    margin-top: 10px;
-    color: #7a7a7a;
-    font-weight: 500;
-}
-
-.box_footer a :hover{
-    flex-direction: column;
-    opacity: 0.8;
-
-}
-.box_footer a i{
-    font-size: 40px;
-    color: rgb(155,215,216);
-    padding: 0 20px;
-    
-}
-.h6bute {
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: capitalize;
-    
-
-}
-span {
-    color: rgb(155,215,216);
-    font-size: 1.5rem;
-    font-style: italic;
-}
-.boxsab {
-    background-color: white;
-    border-radius: 5px;
-    width: 70%;
-    height: 50%;
-   
-
-}
-.boxsabcrem {
-    background-color: white;
-    border-radius: 10px;
-    width: 70%;
-    height: 100%;
-
-}
-
-.sabores {
-    font-size: 4rem;
 }

@@ -10,7 +10,7 @@ body {
 /*Header*/
 header {
     background-image: url(./Imagenes/Fondo\ header.png);
-    background-size: cover;
+    background-size:cover;
     height: 80px;
     position: fixed;
     width: 100%;
@@ -34,9 +34,10 @@ div.redes {
     display: flex;
 }
 
-.logo {
+.navbar .logo {
     padding: 0 40px;
     padding-bottom: 20px;
+ 
 }
 
 .logo img {
@@ -90,7 +91,6 @@ div.redes {
     }
     .logo img {
         width: 60px;
-        padding-bottom: 20px;
     }
     .nav-menu {
         position: fixed;
@@ -138,15 +138,22 @@ div.redes {
         
     }
 }
-
 /*Header*/
-/* Body */
 
+
+/* Body */
 *{
     padding: 0px;
     box-sizing: border-box;
     border-radius: 5px;
     font-family: sans-serif;
+}
+.carrusel{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#carouselExampleControls{
+    grid-column: 2/4;
 }
 .container{
     display: grid;
@@ -321,23 +328,18 @@ div.redes {
 }
 /* Body */
 /*Footer*/
-*/
 footer{
     width: 100%;
-    padding: 50px   0px;
-    background-image: url(./Imagenes/fondofooter.svg);
+    background-image: url(./Imagenes/Fondo\ header.png);
     background-size: cover;
+    height: 80px;
   
-
-
 }
 
 .container_footer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    
-
 
 }
 .box_footer{
@@ -345,52 +347,39 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
-
+    height: 80px;
 
 }
 .box_footer .logo img{
     width: 100px;
-    ;
 
 }
 .box_footer a{
     text-decoration: none;
     margin-top: 10px;
-    color: #7a7a7a;
+    color: #2d7277;
     font-weight: 500;
+
 }
 
-.box_footer a :hover{
+.box_footer a:hover{
     flex-direction: column;
     opacity: 0.8;
+    color: white;
 
 }
 .box_footer a i{
-    font-size: 40px;
-    color: rgb(155,215,216);
-    padding: 0 20px;
+    font-size: 33px;
+    color: #2d7277;
+    padding: 0 10px 0px 10px;
     
 }
-span {
-    color: rgb(155,215,216);
-    font-size: 1.5rem;
-    font-style: italic;
+.bottom-links{
+    margin-bottom: 0px;
 }
-.boxsab {
-    background-color: white;
-    border-radius: 5px;
-    width: 70%;
-    height: 50%;
-   
-
-}
-.boxsabcrem {
-    background-color: white;
-    border-radius: 10px;
-    width: 70%;
-    height: 100%;
-
+.box_footer a i:hover{
+    color: white;
+    
 }
 
 .sabores {
