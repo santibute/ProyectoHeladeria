@@ -4,7 +4,7 @@
 }
 body {
     font-family: sans-serif;
-    padding-top: 90px;
+    padding-top: 80px;
     
 }
 /*Header*/
@@ -23,6 +23,7 @@ header {
 .navbar {
     display: flex;
     justify-content: space-between;
+    height: 80px;
 }
 
 .menu-link {
@@ -35,9 +36,7 @@ div.redes {
 }
 
 .navbar .logo {
-    padding: 0 40px;
-    padding-bottom: 20px;
- 
+    padding: 20px;
 }
 
 .logo img {
@@ -46,14 +45,13 @@ div.redes {
 
 .nav-menu {
     display: flex;
-    margin-right: 40px;
     list-style: none;
+    align-items: center;
 }
 
 .menu-item {
     font-size: 18px;
     margin: 0 10px;
-    line-height: 80px;
     text-decoration: underline;
     text-transform: uppercase;
 }
@@ -68,7 +66,6 @@ div.redes {
     border: none;
     font-size: 24px;
     padding: 20px;
-    line-height: 40px;
     cursor: pointer;
     display: none;
 }
